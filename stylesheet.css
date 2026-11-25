@@ -1,0 +1,115 @@
+:root {
+    --bg: #303030;
+    --primary: #ebebeb;
+    --accent: #382544;
+    --hover: #8ef071;
+    --highlight: #9dcbff;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg);
+    color: var(--bg);
+    padding: 0px;
+    margin: auto;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    margin: auto;
+    max-width: 100%;
+    z-index: 1000;
+}
+.headerlogo {
+    display: flex;
+    float: left;
+    margin-left: 10px;
+    background-color: var(--accent);
+    border-radius: 162px;
+}
+nav {
+    background-color: #303030ad;
+    display: inline-block;
+    text-align: center;
+    a {
+        margin-left: 15px;
+        color: var(--primary);
+        padding-bottom: 6px;
+        background-color: var(--accent);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        grid-template-columns: auto;
+    }
+}
+
+a {
+    color: var(--highlight);
+}
+img {
+    max-width: 100%;
+}
+li {
+    margin-left: 35px;
+    font-size: 14px;
+}
+hr {
+    max-width: 90%;
+}
+table {
+    margin: auto;
+}
+td {
+    border: 1px ridge var(--primary);
+    width: 100px;
+    height: 100px;
+}
+a {
+    color: blue;
+    background-color: #FFFF;
+    border: 1px #382544 ridge;
+}
+.td1 {
+    height: 10px;
+}
+.heroimage {
+    position: absolute;
+    margin: auto;
+    background-image: url(madelbrotbandw.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: fit-content;
+}
+.main1 {
+    max-width: 1000px;
+    font-size: 16px;
+    margin: auto;
+    border-radius: 30px;
+    height: fit-content;
+    padding: 12px;
+    backdrop-filter: blur(12px) contrast(1.3);
+}
+
+.main2 {
+    top: 800px;
+    margin: 40px auto;
+    max-width: 1100px;
+    padding: 30px;
+    background-color: var(--bg);
+    font-size: 14px;
+    color: var(--primary);
+    text-align: left;
+}
+.main2text {
+    max-width: 1100px;
+    margin: auto;
+}
+.herotext {
+    width: fit-content;
+    padding: -30px;
+    margin: 110px auto auto auto;
+}
